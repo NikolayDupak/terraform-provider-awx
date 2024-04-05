@@ -42,7 +42,7 @@ func resourceCredential() *schema.Resource {
 				Description: "Specify the type of credential you want to create. Refer to the Ansible Tower documentation for details on each type",
 			},
 			"inputs": {
-				Type:        schema.TypeString,
+				Type:        schema.TypeMap,
 				Required:    true,
 				Sensitive:   true,
 				Description: "The inputs to be created with the credential.",
